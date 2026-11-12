@@ -2,7 +2,7 @@ from langchain.chat_models import init_chat_model
 from langchain_qdrant import QdrantVectorStore
 from pydantic import BaseModel
 
-from ..core.config import get_settings, get_embeddings, get_qdrant_client
+from app.core.config import get_settings, get_embeddings, get_qdrant_client
 
 NO_ANSWER = "I don't know. The clause Shop handler does not cover that"
 
@@ -32,7 +32,7 @@ class RAGService:
             model=self.settings.chat_model,
             model_provider=self.settings.chat_provider,
             temperature=self.settings.temperature,
-            google_api_key=self.settings.google_api_key
+            # google_api_key=self.settings.google_api_key
         )
 
     def ask(self, question: str) -> Answer | None:
