@@ -1,4 +1,4 @@
-# Clause Shop Customer Policy Handbook (2026 edition)
+# Clause Shop.com Customer Policy Handbook (2026 edition)
 
 ## 1. Refunds
 
